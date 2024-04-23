@@ -8,7 +8,95 @@
 2024-04-22 10:07:00 - WARNING - Invalid input received
 2024-04-22 10:08:00 - ERROR - File not found
 2024-04-22 10:09:00 - INFO - Application stopped
-2024-04-22 10:10:00 - INFO - HTTP 200 OK - GET /api/user
+2024-04-22 10:10:00 - INFO - HTTP 200 OK - GET /api/user20: HTTP 500 - POST https://www.google.com/
+40: ERROR message
+20: HTTP 404 - GET https://www.google.com/
+10: DEBUG message
+20: HTTP 500 - GET https://www.google.com/
+40: ERROR message
+40: ERROR message
+40: ERROR message
+10: DEBUG message
+20: HTTP 200 - POST https://www.google.com/
+20: HTTP 404 - POST https://www.google.com/
+40: ERROR message
+10: DEBUG message
+10: DEBUG message
+10: DEBUG message
+40: ERROR message
+40: ERROR message
+10: DEBUG message
+40: ERROR message
+10: DEBUG message
+40: ERROR message
+40: ERROR message
+40: ERROR message
+20: HTTP 200 - GET https://www.google.com/
+40: ERROR message
+40: ERROR message
+40: ERROR message
+10: DEBUG message
+20: HTTP 200 - POST https://www.google.com/
+20: HTTP 200 - GET https://www.google.com/
+10: DEBUG message
+20: HTTP 404 - POST https://www.google.com/
+40: ERROR message
+40: ERROR message
+10: DEBUG message
+10: DEBUG message
+10: DEBUG message
+40: ERROR message
+10: DEBUG message
+10: DEBUG message
+10: DEBUG message
+40: ERROR message
+10: DEBUG message
+10: DEBUG message
+20: HTTP 200 - POST https://www.google.com/
+20: HTTP 500 - POST https://www.google.com/
+10: DEBUG message
+40: ERROR message
+40: ERROR message
+10: DEBUG message
+20: HTTP 404 - GET https://www.google.com/
+40: ERROR message
+10: DEBUG message
+40: ERROR message
+40: ERROR message
+10: DEBUG message
+20: HTTP 500 - POST https://www.google.com/
+10: DEBUG message
+10: DEBUG message
+20: HTTP 200 - POST https://www.google.com/
+40: ERROR message
+40: ERROR message
+20: HTTP 200 - POST https://www.google.com/
+10: DEBUG message
+40: ERROR message
+40: ERROR message
+40: ERROR message
+20: HTTP 200 - POST https://www.google.com/
+10: DEBUG message
+20: HTTP 404 - POST https://www.google.com/
+20: HTTP 200 - GET https://www.google.com/
+10: DEBUG message
+10: DEBUG message
+20: HTTP 404 - POST https://www.google.com/
+40: ERROR message
+20: HTTP 200 - GET https://www.google.com/
+20: HTTP 404 - POST https://www.google.com/
+40: ERROR message
+40: ERROR message
+10: DEBUG message
+10: DEBUG message
+20: HTTP 200 - GET https://www.google.com/
+40: ERROR message
+10: DEBUG message
+10: DEBUG message
+40: ERROR message
+40: ERROR message
+20: HTTP 500 - GET https://www.google.com/
+10: DEBUG message
 2024-04-22 10:11:00 - INFO - HTTP 404 Not Found - GET /api/user
 2024-04-22 10:12:00 - INFO - HTTP 500 Internal Server Error - POST /api/user
 2024-04-22 10:13:00 - INFO - HTTP 200 OK - GET /api/product
