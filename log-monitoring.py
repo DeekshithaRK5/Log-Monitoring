@@ -3,7 +3,7 @@ import signal
 import re
 import sys
 from collections import Counter
-
+import datetime
 # Function to handle Ctrl+C
 def signal_handler(sig, frame):
     print("\nLog monitoring stopped.")
@@ -27,7 +27,7 @@ def monitor_log(log_file):
 
 # Function to perform log analysis
 def analyze_log(log_file):
-    keywords = ["ERROR", "WARNING", "CRITICAL"]  # Add more keywords as needed
+    keywords = ["ERROR", "DEBUG", "INFO"]  # Add more keywords as needed
     http_status_regex = r'\b\d{3}\b'  # Regular expression to match HTTP status codes
     status_code_count = Counter()
 
@@ -43,10 +43,14 @@ def analyze_log(log_file):
                 if re.search(keyword, line):
                     status_code_count[keyword] += 1
 
-    # Print summary report
-    print("\nLog Analysis Summary:")
-    for item, count in status_code_count.items():
-        print(f"{item}: {count}")
+    # Print and create summary report
+    print("\nLog Analysis Summary:",datetime.datetime.now())
+    with open("report.txt","w") as report:
+        for item, count in status_code_count.items():
+            current_datetime = datetime.datetime.now()
+            date = current_datetime.strftime("%Y-%m-%d %H:%M:%S")
+            report.write(f"{date} : {item}: {count}\n")
+            print(f"{item}: {count}")
 
 # Main function
 def main():
